@@ -3,122 +3,131 @@
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
-            /* border:  2px white solid; */
         }
-        .container{
+       @font-face {
+        font-family: custom-font;
+        src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+       }
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+        }
+        .header{
+            display: flex;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+           justify-content: space-between;
+           background-color: antiquewhite;
+           gap: 10px;
+              box-shadow: 1px 1px 10px;
+
+        }
+        .header input{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #5410ca;
+            border: 2px solid #5410ca;
+            border-radius: 5px;
+            width: 100px;
+            font-size: 15px;
+            font-weight: bold;
+            box-shadow: 1px 1px 10px grey;
+
+         }
+
+         .header input:hover{
+            background-color: #193e219b;
+            width: 110px;
+         }
+         .about{
+            padding: 10px;
+            background-color: #8d8366;
+            box-shadow: 1px 1px 5px black;
+            color:white;  
+         }
+
+        form{
+            
             display: flex;
             flex-direction: column;
-            background-color: #778ca9;
-           height: 400px; 
-           width: 200px;
+            background-color:#0b060b ;
+           height: 500px; 
+           width:300px;
            margin: 0 auto;
-           outline: 5px rgb(202, 56, 207) solid;
+           outline: 10px #08060b solid;
            margin-top: 50px; 
            padding: 1px;
-        
            border-radius: 5px;
            justify-content: flex-end;
            align-items: center;
-          
+           box-shadow: 10px 10px 50px black;
+         }
+        .container{
+            height: 600px;
 
-        }
-       .container .items {
-        display: flex;
-        flex-wrap: wrap;
-            width: 200px;
-            height: 200px;
-            background-color: rgb(70, 101, 91);
-            border: 1px rgb(171, 156, 156) solid;
-            border-radius: 10px;
-            justify-content: space-around;
-            /* padding-bottom: 5px; */
-        }
-        button{
-            display: flex;
-            width: 30px;
-            height: 30px;
-            color: white;
-            background:cadetblue;
-            font-size: 20px;
-            border-radius: 30%;
-            border: 2px white solid;
-            align-items: center;
-            justify-content: center;
-            margin: 5px;
-
-                 
-        }
-        .item1{
-            
-            display: flex;
-            justify-content: space-around;
-            /* gap: 20px; */
-        }
-        .item2{
-            display: flex;
-            justify-content: space-around;
-            /* gap: 20px; */
-        }
-        .item3{
-            display: flex;
-            justify-content: space-around;
-            /* gap: 20px; */
-        }
-        .item4{
-            display: flex;
-            justify-content: space-around;
-            /* gap: 20px; */
-        }
-        .item5{
-            display: flex;
-            justify-content: space-around;
-            /* gap: 20px; */
-        }
-        .container .item{
-            display: flex;
-            /* margin:0px; */
-            gap: 8px;
-        }
-        .but-c{
-            font-weight: bold;
-            color: #e1c65b;
         }
         .container .place-holder{
             display: flex;
             flex-direction: column;
             height: 200px;
-            width: 200px;
+            width: 300px;
             background-color: rgb(46, 56, 56);
-            margin-bottom: 10px;
-            /* align-self: flex-start; */
-            /* justify-content: flex-start; */
             color: white;
             font-weight: bold;
             font-size: 30px;
-            border-radius: 10px;
             align-items: center;
             justify-content: space-around;
             padding: 10px;
 
+            border:  2px #0b060b  solid;
         }
-       
-
-        .result{
-            padding: 10px;
-            display: flex;
-            justify-content: end;
-            align-items: end;
-            text-wrap: wrap;
-            height: 100px;
-            /* border:  2px white solid; */
-            width: 190px;
-            
-
+        
+        .display input{
+            border: 2px  rgb(46, 56, 56) solid;
+            background-color: rgb(46, 56, 56);
+            width: 290px;
         }
-        .input{
+       .container .items {
+
+        display: flex;
+        flex-wrap: wrap;
+            width: 300px;
+            height: 310px;
+            background-color: #0e0f0f;
+            border-top-left-radius: 15px;          
+            border-top-right-radius: 15px; 
+        }
+      
+        .item input{
+            width: 55px;
+            height:55px;
+            background-color:rgb(40, 42, 45);
             display: flex;
-            height: 50px;
-         width: 190px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30%;
+            border:  2px rgb(27, 27, 49) solid;
+            font-size: 30px;
+            font-family:custom-font;
+            /* box-shadow: 1px 1px 1px; */
+        }
+
+        .item {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            width: 300px;  
+        }
+    .input{
+            display: flex;
+            height: 60px;
+         width:290px;
          align-items: center;
             background-color: rgb(46, 56, 56);
             border-color:rgb(46, 56, 56) ;
@@ -133,5 +142,29 @@
             color: white;
             font-size: 20px;
             border: 2px solid  rgb(46, 56, 56);
-
+             border:  2px white solid;
         }
+        a{
+            color: white;
+            font-weight: 900;
+        }
+        a:hover{
+            text-decoration: none;     
+        }
+       .item1 .all-clear{
+            font-size: 20px;
+            color:#93db4a;
+            font-weight: 600;
+        }
+        .item1 .delete{
+            font-size: 20px;
+            color: #93db4a;
+            font-weight: 600;   
+        }
+     
+       .facebook{
+        color: rgb(22, 59, 224);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+       }
+         
+        

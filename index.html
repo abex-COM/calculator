@@ -5,56 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
    <link rel="stylesheet" href="./styles.css">
+   <script src="./scripts.js" defer></script>
 </head>
 <body>
+    <div class="header">
+      <div class="about">Standard Calculator <br>Developed by <a class="tel-link" href="https://t.me/abexman91" target="_blank">Abdulhaq</a></div>
+       <a class="facebook" href="https://www.facebook.com/Abdulhaqqii.mustafa/" target="_blank">facebook</a>
+      <input  type="button" class="body-color" value="dark theme">
+      
+   </div>
     <div class="container">
+
+
+        <form >
     <div class="place-holder">
-        <div class="result"></div>
-        <Input type="text" class="input" id="numberInput"> </Input>
+        <div class="display">
+            <input type="text" name="result" >
+        </div>
+        <Input type="text" name="input" class="input"> </Input>
     
     </div>
         <div class="items">
              
             <div class="item item1">
-                <button class="but-c">C</button>
-                <button onclick="buttonValues('( )')">( )</button>
-                <button onclick="buttonValues('%')"> % </button>
-                <button onclick="buttonValues('÷')">÷</button>
-                
-            </div>       
-            <div class="item item2">
-                <button onclick="buttonValues('7')">7</button>
-                <button onclick="buttonValues('8')">8</button>
-                <button onclick="buttonValues('9')">9 </button>
-                <button onclick="buttonValues('×')">×</button>
+                <input class="all-clear" type="button" value="AC" onclick="input.value  ='' ; result.value=''">   
+                <input class="delete" type="button" value="DE"onclick=" input.value =input.value.toString().slice(0,-1)">   
+                <input class="remainder" type="button" value="%" onclick="input.value +='%'">   
+                <input class="devi" type="button" value="÷" onclick="input.value +='/'">   
             </div>
-
+            <div class="item item2">
+                <input type="button" value="7" onclick="input.value += '7'">   
+                <input type="button" value="8" onclick="input.value +='8'">   
+                <input type="button" value="9" onclick="input.value +='9'">   
+                <input class="multp" type="button" value="x" onclick="input.value +='*'">   
+            </div>
             <div class="item item3">
-                <button onclick="buttonValues('4')">4</button>
-                <button onclick="buttonValues('5')">5</button>
-                <button onclick="buttonValues('6')">6 </button>
-                <button onclick="buttonValues('−')">−</button>
-
+                <input type="button" value="4" onclick="input.value +='4'">   
+                <input type="button" value="5" onclick="input.value +='5'">   
+                <input type="button" value="6" onclick="input.value +='6'">   
+                <input class="minus" type="button" value="-" onclick="input.value +='7'">   
             </div>
             <div class="item item4">
-                <button onclick="buttonValues('1')">1</button>
-                <button onclick="buttonValues('2')">2</button>
-                <button onclick="buttonValues('3')">3</button>
-                <button onclick="buttonValues('+')">+</button>
+                <input type="button" value="1" onclick="input.value +='1'">   
+                <input type="button" value="2" onclick="input.value +='2'">   
+                <input type="button" value="3" onclick="input.value +='3'">   
+                <input class="plus" type="button" value="+" onclick="input.value +='+'">   
             </div>
-          
             <div class="item item5">
-                <button onclick="buttonValues('00')">00</button>
-                <button onclick="buttonValues('0')">0</button>
-                <button onclick="buttonValues('.')">.</button>
-                <button class="equal">=</button>
-
-
+                <input type="button" value="00" onclick="input.value +='00'">   
+                <input type="button" value="0" onclick="input.value  +='0'">   
+                <input type="button" value="." onclick="input.value  +='.'">   
+                <input class="equal" type="button" value="=" onclick="result.value = eval(input.value)">   
             </div>
 
         </div>
+    </form>
     </div>
-    <script src="./scripts.js"></script>
   
 </body>
 </html>
