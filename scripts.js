@@ -7,13 +7,13 @@ const link = document.querySelector('.tel-link');
 bodyColor.addEventListener(('click'), function () {
     if(body.style.getPropertyValue('background-color')==='rgb(204, 204, 204)'){
       body.style.backgroundColor = 'white';
-      bodyColor.value = "Dark"
+      bodyColor.value = "grey"
   
       }
          else
          {
       body.style.backgroundColor = 'hsl(0,0%,80%)';
-      bodyColor.value = "White"
+      bodyColor.value = "white"
       
        
          }
