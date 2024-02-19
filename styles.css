@@ -21,9 +21,10 @@
             display: flex;
             align-items: center;
            justify-content: space-between;
-           background-color: antiquewhite;
+           background-color: #faebd7;
            gap: 10px;
-              box-shadow: 1px 1px 10px;
+            box-shadow: 1px 1px 10px;
+            
 
         }
         .header input{
@@ -41,14 +42,15 @@
          }
 
          .header input:hover{
-            background-color: #193e219b;
-            width: 110px;
+            background-color: #1a1c139b;
          }
          .about{
             padding: 10px;
-            background-color: #8d8366;
+            background-color: #5d553c;
             box-shadow: 1px 1px 5px black;
             color:white;  
+            font-family: custom-font;
+            width: 180px;
          }
 
         form{
@@ -148,7 +150,7 @@
             color: white;
             font-weight: 900;
         }
-        a:hover{
+        a{
             text-decoration: none;     
         }
        .item1 .all-clear{
@@ -164,7 +166,7 @@
      
        .facebook{
         color: rgb(22, 59, 224);
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: custom-font;
        }
          
         
