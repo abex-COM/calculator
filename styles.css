@@ -106,6 +106,7 @@
             border-top-right-radius: 15px; 
             /* border:  2px white solid; */
             gap: 5px;
+            
 
         }
       
@@ -122,6 +123,8 @@
             font-size: 30px;
             font-family:custom-font;
             
+
+            
         }
 
         .item {
@@ -130,6 +133,7 @@
             justify-content: center;
             align-items: center;
             width: 300px;  
+            
 
         }
     .input{
@@ -199,8 +203,10 @@
             }
             .item input{
                 font-size: 0.8rem;
-                width: 30px;
-                height:30px;
+                width: 35px;
+                height:35px;
+                border:  2px #5c6745 solid;
+
             }
             .item1 .all-clear{
                 font-size: 0.8rem;
@@ -213,14 +219,16 @@
                 
                 height: 200px;
                 width: 200px;
+                border: 1px #0b060b solid;
             }
             .display input{
-                width: 198px;
+                width: 180px;
             }
             
             .input{
                 height: 60px;
-             width:198px;
+             width:180px;
+             
             
             }
             .about{
@@ -229,6 +237,11 @@
                 width: 6rem;
              }
             
-            
+            .item{
+            /* border:  2px red solid; */
+                width: 200px;
+                height: 37px;
+                gap: 15px;
+            }
          }
         
